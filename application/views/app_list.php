@@ -101,10 +101,10 @@
                                 <td><strong>SECRET KEY:</strong></td>
                                 <td class="secretKey"></td>
                             </tr>
-                            <tr>
-                                <td><strong>分类:</strong></td>
-                                <td></td>
-                            </tr>
+<!--                            <tr>-->
+<!--                                <td><strong>分类:</strong></td>-->
+<!--                                <td></td>-->
+<!--                            </tr>-->
                             </tbody>
                         </table>
                     </div>
@@ -157,4 +157,19 @@
             </div>
         </div>
     </div>
+    <script>
+        $('.package-info').on('click', function () {
+            var appName = $(this).children('.appName').text();
+            var packageName = $(this).children('.packageName').text();
+            var accessId = $(this).children('.accessID').text();
+            var accessKey = $(this).children('.accessKey').text();
+            var secretKey = $(this).children('.secretKey').text();
+            var modal = $('#modal-info');
+            modal.find('.appName').text(appName);
+            modal.find('.packageName').text(packageName);
+            modal.find('.accessID').text(accessId);
+            modal.find('.accessKey').text(accessKey);
+            modal.find('.secretKey').text(secretKey);
+        });
+    </script>
 </div>
