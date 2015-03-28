@@ -5,11 +5,6 @@ require APPPATH.'/libraries/XingeApp.php';
 		 * 应用管理首页
 		 */
 		function index($error=null){
-// 			$params = array('accessId'=>'2100091608',
-// 					'secretKey'=>'5a42d792779f1ed162198bb429ac7c81');
-// 			$this->load->library('xingeapp',$params);
-// 			$res = $this->xingeapp->QueryDeviceCount();
-// 			print_r($res);
 			$errorarr['str'] = $error;
 			$data['app_info'] = $this->get_app_list();
 			$this->load->view('header',$errorarr);
