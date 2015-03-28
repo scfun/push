@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<HTML lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="http://cdn.bootcss.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<script>
+			$('#myModal').on('shown.bs.modal', function () {
+    		$('#myInput').focus()
+ 			 })
+		</script>
+	</head>
+	<body>
+
+		<nav class="navbar navbar-default">
+	      <div class="container-fluid">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="navbar-brand" href="#">GKT PUSH MS</a>
+	        </div>
+	        <div id="navbar" class="navbar-collapse collapse">
+	          <ul class="nav navbar-nav">
+	            <li class="active"><a href="index.html">主页</a></li>
+	            <li><a href="#about">任务管理</a></li>
+		        <li><a href="#contact">日程管理</a></li>
+		        <li><a href="#contact">效果管理</a></li>
+       		 </li>
+	          </ul>
+			     <form class="navbar-form navbar-left" role="search">
+			        <div class="form-group">
+			          	<input type="text" class="form-control" placeholder="输入点什么？">
+			        </div>
+			        <button type="submit" class="btn btn-default">搜索</button>
+		      	</form>
+		       <ul class="nav navbar-nav navbar-center">
+		       		<li><a href="#about"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>创建Task</a></li>
+		       </ul>
+		       <ul class="nav navbar-nav navbar-right">
+		       		<li><a href="app_list.html"><span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span>配置</a></li>
+		       		<li><a href="#about"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>退出</a></li>
+		       </ul>
+	        </li>
+	      </ul>
+	        </div>
+	        </div>
+	    </nav>
+	    <!--导航结束-->
+	   	    <div class="container-fluid">
+	    	<div class="row">
+	    		<div class="col-md-2 sidebar">
+	   			    <div class="panel panel-default">
+	           			<div class="panel-heading">
+	              			<h3 class="panel-title">操作什么</h3>
+	            		</div>
+	            		<div class="panel-body">
+					   		<ul class="nav nav-sidebar">
+					            <li class="active"><a href="#">创建Task <span class="sr-only">(current)</span></a></li>
+					            <li><a href="#">报告</a></li>
+					            <li><a href="#">分析</a></li>
+				          	</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div role="tabpanel">
+  			<!-- Nav tabs -->
+  				<ul class="nav nav-tabs" role="tablist">
+				    <li role="presentation" class="active"><a href="#notification" aria-controls="notification" role="tab" data-toggle="tab">消息模式</a></li>
+				    <li role="presentation"><a href="#message" aria-controls="message" role="tab" data-toggle="tab">透传模式</a></li>
+  				</ul>
+
+  <!-- Tab panes -->
+			  <div class="tab-content">
+			    <div role="tabpanel" class="tab-pane active" id="notification">
+			    	
+			    </div>
+			    <div role="tabpanel" class="tab-pane" id="message">333.</div>
+			  </div>
+			</div>
+				</div>
+			</div>
+          	</div>	
+        </html>		
