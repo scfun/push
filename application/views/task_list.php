@@ -77,7 +77,7 @@
                         <table class="table table-striped table-bordered">
                             <tbody>
                             <tr>
-                                <td><strong>modal-infoask_ID</strong></td>
+                                <td><strong>Task_ID</strong></td>
                                 <td class="task_id"></td>
                             </tr>
                             <tr>
